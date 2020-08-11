@@ -4,7 +4,8 @@
 \alias{estimate_iid_distr_Imhof}
 \title{Estimate distribution of the fACF under the iid. hypothesis using Imhof's method}
 \usage{
-estimate_iid_distr_Imhof(Y, v, autocovSurface, matindex, figure = FALSE, ...)
+estimate_iid_distr_Imhof(Y, v, autocovSurface, matindex, figure = FALSE,
+  ...)
 }
 \arguments{
 \item{Y}{Matrix containing the discretized values

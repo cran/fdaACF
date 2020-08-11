@@ -4,7 +4,8 @@
 \alias{obtain_FACF}
 \title{Obtain the autocorrelation function for a given functional time series.}
 \usage{
-obtain_FACF(Y, v, nlags, ci = 0.95, estimation = "MC", figure = TRUE, ...)
+obtain_FACF(Y, v, nlags, ci = 0.95, estimation = "MC", figure = TRUE,
+  ...)
 }
 \arguments{
 \item{Y}{Matrix containing the discretized values
@@ -74,7 +75,7 @@ obtain_FACF(Y,v,20)
 
 data(elec_prices)
 v <- seq(from = 1, to = 24)
-nlags <- 50
+nlags <- 30
 obtain_FACF(Y = as.matrix(elec_prices), 
 v = v,
 nlags = nlags,
@@ -83,5 +84,15 @@ figure = TRUE)
 }
 }
 \references{
-\url{https://www.sciencedirect.com/science/article/pii/S0047259X17303512}
+Mestre, G., Portela, J., Muñoz-San Roque, A., Alonso, E. (2020).
+\emph{Forecasting hourly supply curves in the Italian Day-Ahead 
+electricity market with a double-seasonal SARMAHX model.}
+International Journal of Electrical Power & Energy Systems, 
+121, 1--13. \url{https://www.sciencedirect.com/science/article/pii/S0142061519337135}
+
+Kokoszka, P., Rice, G., Shang, H.L. (2017).
+\emph{Inference for the autocovariance of a functional
+ time series under conditional heteroscedasticity}
+Journal of Multivariate Analysis, 
+162, 32--50. \url{https://www.sciencedirect.com/science/article/pii/S0142061519337135}
 }
