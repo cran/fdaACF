@@ -1,8 +1,8 @@
 Package: fdaACF
 Type: Package
 Title: Autocorrelation Function for Functional Time Series
-Version: 0.2.0
-Date: 2020-08-09
+Version: 1.0.0
+Date: 2020-10-20
 Author: Guillermo Mestre Marcos [aut, cre],
   José Portela González [aut],
   Gregory Rice [aut],
@@ -10,13 +10,14 @@ Author: Guillermo Mestre Marcos [aut, cre],
   Estrella Alonso Pérez [ctb]
 Maintainer: Guillermo Mestre Marcos <guillermo.mestre@comillas.edu>
 Description: Quantify the serial correlation across lags of a given functional 
-    time series using an autocorrelation function and a partial autocorrelation
-    function for functional time series.
+    time series using the autocorrelation function and a partial autocorrelation
+    function for functional time series proposed in 
+    Mestre et al. (2021) <doi:10.1016/j.csda.2020.107108>.
     The autocorrelation functions are based on the L2 norm of the lagged covariance 
     operators of the series. Functions are available for estimating the 
     distribution of the autocorrelation functions under the assumption 
     of strong functional white noise.
-Imports: CompQuadForm, pracma, fda, Matrix, vars
+Imports: CompQuadForm, pracma, fda, vars
 NeedsCompilation: no
 URL: https://github.com/GMestreM/fdaACF
 BugReports: https://github.com/GMestreM/fdaACF/issues
@@ -38,6 +39,6 @@ Authors@R: c(
     )
 RoxygenNote: 7.0.1
 Suggests: testthat, fields
-Packaged: 2020-08-11 14:11:41 UTC; Guille
+Packaged: 2020-10-20 17:14:23 UTC; Guille
 Repository: CRAN
-Date/Publication: 2020-08-11 15:00:07 UTC
+Date/Publication: 2020-10-20 20:00:16 UTC

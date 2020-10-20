@@ -67,8 +67,9 @@ white noise.
 N <- 100
 v <- seq(from = 0, to = 1, length.out = 5)
 sig <- 2
+set.seed(15)
 Y <- simulate_iid_brownian_bridge(N, v, sig)
-obtain_FPACF(Y,v,20, n_harm = 2)
+obtain_FPACF(Y,v,10, n_harm = 2)
 
 \donttest{
 # Example 2
@@ -83,4 +84,11 @@ n_harm = 5,
 ci = 0.95,
 figure = TRUE)
 }
+}
+\references{
+Mestre G., Portela J., Rice G., Muñoz San Roque A., Alonso E. (2021).
+\emph{Functional time series model identification and diagnosis by 
+means of auto- and partial autocorrelation analysis.}
+Computational Statistics & Data Analysis, 155, 107108.
+\url{https://doi.org/10.1016/j.csda.2020.107108}
 }
